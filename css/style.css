@@ -75,7 +75,7 @@ button {
 /**********************/
 header {
   position: relative;
-  background: url("../img/miel-abeille-back.jpg") no-repeat center fixed;
+  background: url("../img/backgrounds/miel-abeille-back.jpg") no-repeat center fixed;
   height: 100vh;
   /* pour anciens Chrome et Safari */
   background-size: cover;
