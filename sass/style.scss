@@ -1,0 +1,248 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: $fontSizeDefault;
+  font-family: "Karla", sans-serif;
+  color: $grey;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 300;
+  margin: 0 30px;
+}
+
+h2 {
+  font-size: 3em;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+p {
+  margin: 0;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+section {
+  padding: 30px 0 0;
+}
+
+//conteuneur not full width
+.noFull {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+button {
+  @include shadowBlack;
+  border-radius: 5px;
+  background-color: $yellow2;
+  border: 1px solid $yellow2;
+  height: $buttonH;
+  width: $buttonW;
+  color: black;
+  font-size: 1.2em;
+}
+
+/**********************/
+/* els du header */
+/**********************/
+
+header {
+  position: relative;
+  background: url("../img/miel-abeille-back.jpg") no-repeat center fixed;
+  height: 100vh;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+  overflow: hidden;
+  h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  p {
+    color: white;
+  }
+}
+
+.logo {
+  width: 45%;
+  margin: 20px 0;
+}
+
+#headLinks {
+  background-color: rgba(96, 87, 8, 0.6);
+  line-height: 30px;
+  display: none;
+}
+
+#headCenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 30px 5vw;
+  height: calc(100vh - 30px);
+  h1,
+  h2 {
+    @include textShadowBlack;
+    color: white;
+  }
+}
+
+#headerButtons {
+  width: 100%;
+  ul {
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    align-content: center;
+    li {
+      text-align: center;
+      margin: 5px 5px;
+      line-height: 40px;
+      width: 100%;
+      border: 1px solid $yellow2;
+      background-color: rgba(255, 255, 255, 0.8);
+      a {
+        text-transform: uppercase;
+        color: $yellow2;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+/**********************/
+/* debuts de pages */
+/**********************/
+
+.introPage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  div {
+    border: 1px solid $yellow2;
+    padding: 20px 30px 30px 20px;
+    background-color: white;
+    z-index: 10;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  p {
+    margin-left: 20px;
+  }
+  img {
+    width: 100%;
+  }
+}
+/**********************/
+/* GRille de produits */
+/**********************/
+
+.sectionTitle {
+  background-image: url("../img/backgrounds/honeywhite.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: capitalize;
+  min-height: 200px;
+  padding: 50px;
+  h1 {
+    font-size: 6em;
+  }
+}
+
+.sectionContent {
+  background-color: $blueSection;
+  color: white;
+  padding: 40px;
+}
+
+.productsTile {
+  figure {
+    background-color: white;
+    color: $grey;
+    width: 100%;
+    margin: 30px 0 0;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 150px;
+    }
+    figcaption {
+      position: relative;
+      padding: 10px 20px;
+    }
+    p:last-of-type {
+      text-align: right;
+    }
+    h2 {
+      position: absolute;
+      top: -23px;
+      right: 0;
+      margin: 0;
+      padding-left: 10px;
+      width: 100%;
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.9em;
+      background-color: rgba(255, 255, 255, 0.7);
+      line-height: 20px;
+    }
+    h3 {
+      margin: 30px 0;
+      color: black;
+    }
+  }
+}
+
+/**********************/
+/* FOOTER */
+/**********************/
+footer {
+  background-image: url("../img/backgrounds/honeywhite2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  padding: 40px;
+  text-align: center;
+  a {
+    color: $blueSection;
+  }
+}
+
+@import "_responsive.scss";

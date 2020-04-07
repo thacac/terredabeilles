@@ -1,0 +1,83 @@
+/***************************************************
+RESPONSIVES
+***************************************************/
+@media (min-width: 576px) {
+  body {
+    font-size: $fontSizeSmart;
+  }
+
+  #headerButtons ul{
+    flex-wrap: nowrap;
+  }
+ 
+  .introPage {
+    div {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      right: 50px;
+    }
+  }
+
+}
+
+@media (orientation: landscape) {
+  h1 {
+    margin: 5px 0 30px;
+  }
+  #headerButtons ul{
+    flex-wrap: nowrap;
+  }
+  .logo {
+    width: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: $fontSizeTab;
+  }
+
+/***************************************************
+NAVS
+***************************************************/
+
+/***************************************************
+LOGO
+***************************************************/
+
+/***************************************************
+FOOTER
+***************************************************/
+footer+div{
+  p{
+    display: block-inline;
+  }
+  display: flex;
+flex-direction: row-reverse;
+}
+
+/***************************************************
+articles organisation
+***************************************************/
+}
+
+/* // Large devices (desktops, 992px and up)*/
+@media (min-width: 991px) {
+  // footer{
+  //   background-position-y: -50px;
+  // }
+  
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: $fontSize1200;
+  }
+  footer{
+    background-position-y: -100px;
+  }
+  /**************************************************
+                        LOGO
+***************************************************/
+}

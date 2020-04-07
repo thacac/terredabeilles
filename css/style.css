@@ -1,0 +1,361 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 10px;
+  font-family: "Karla", sans-serif;
+  color: #707070;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 300;
+  margin: 0 30px;
+}
+
+h2 {
+  font-size: 3em;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  padding: 30px 0 0;
+}
+
+.noFull {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+button {
+  -webkit-box-shadow: 5px 5px 5px -6px rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px 5px -6px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  background-color: #EBBA18;
+  border: 1px solid #EBBA18;
+  height: 40px;
+  width: 100px;
+  color: black;
+  font-size: 1.2em;
+}
+
+/**********************/
+/* els du header */
+/**********************/
+header {
+  position: relative;
+  background: url("../img/miel-abeille-back.jpg") no-repeat center fixed;
+  height: 100vh;
+  /* pour anciens Chrome et Safari */
+  background-size: cover;
+  /* version standardisée */
+  overflow: hidden;
+}
+
+header h2 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+header p {
+  color: white;
+}
+
+.logo {
+  width: 45%;
+  margin: 20px 0;
+}
+
+#headLinks {
+  background-color: rgba(96, 87, 8, 0.6);
+  line-height: 30px;
+  display: none;
+}
+
+#headCenter {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  padding: 30px 5vw;
+  height: calc(100vh - 30px);
+}
+
+#headCenter h1,
+#headCenter h2 {
+  text-shadow: 2px 1px 2px black;
+  color: white;
+}
+
+#headerButtons {
+  width: 100%;
+}
+
+#headerButtons ul {
+  padding: 0;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#headerButtons ul li {
+  text-align: center;
+  margin: 5px 5px;
+  line-height: 40px;
+  width: 100%;
+  border: 1px solid #EBBA18;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#headerButtons ul li a {
+  text-transform: uppercase;
+  color: #EBBA18;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/**********************/
+/* debuts de pages */
+/**********************/
+.introPage {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.introPage div {
+  border: 1px solid #EBBA18;
+  padding: 20px 30px 30px 20px;
+  background-color: white;
+  z-index: 10;
+}
+
+.introPage h1 {
+  font-size: 3em;
+}
+
+.introPage p {
+  margin-left: 20px;
+}
+
+.introPage img {
+  width: 100%;
+}
+
+/**********************/
+/* GRille de produits */
+/**********************/
+.sectionTitle {
+  background-image: url("../img/backgrounds/honeywhite.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: capitalize;
+  min-height: 200px;
+  padding: 50px;
+}
+
+.sectionTitle h1 {
+  font-size: 6em;
+}
+
+.sectionContent {
+  background-color: #4EBBBC;
+  color: white;
+  padding: 40px;
+}
+
+.productsTile figure {
+  background-color: white;
+  color: #707070;
+  width: 100%;
+  margin: 30px 0 0;
+}
+
+.productsTile figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150px;
+}
+
+.productsTile figure figcaption {
+  position: relative;
+  padding: 10px 20px;
+}
+
+.productsTile figure p:last-of-type {
+  text-align: right;
+}
+
+.productsTile figure h2 {
+  position: absolute;
+  top: -23px;
+  right: 0;
+  margin: 0;
+  padding-left: 10px;
+  width: 100%;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9em;
+  background-color: rgba(255, 255, 255, 0.7);
+  line-height: 20px;
+}
+
+.productsTile figure h3 {
+  margin: 30px 0;
+  color: black;
+}
+
+/**********************/
+/* FOOTER */
+/**********************/
+footer {
+  background-image: url("../img/backgrounds/honeywhite2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  padding: 40px;
+  text-align: center;
+}
+
+footer a {
+  color: #4EBBBC;
+}
+
+/***************************************************
+RESPONSIVES
+***************************************************/
+@media (min-width: 576px) {
+  body {
+    font-size: 10px;
+  }
+  #headerButtons ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .introPage div {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+  }
+}
+
+@media (orientation: landscape) {
+  h1 {
+    margin: 5px 0 30px;
+  }
+  #headerButtons ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .logo {
+    width: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  /***************************************************
+NAVS
+***************************************************/
+  /***************************************************
+LOGO
+***************************************************/
+  /***************************************************
+FOOTER
+***************************************************/
+  footer + div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  footer + div p {
+    display: block-inline;
+  }
+  /***************************************************
+articles organisation
+***************************************************/
+}
+
+/* // Large devices (desktops, 992px and up)*/
+@media (min-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+  footer {
+    background-position-y: -100px;
+  }
+  /**************************************************
+                        LOGO
+***************************************************/
+}
+/*# sourceMappingURL=style.css.map */
